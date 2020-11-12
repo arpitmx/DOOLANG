@@ -7,7 +7,7 @@ import java.lang.*;
 
 //Edit Nov 12 , 2020;
 // Testing for git push...
-//Testing hello world i am ready to gooooo
+//Testing testing testing
 
 public class Main {
         //for digit conditions
