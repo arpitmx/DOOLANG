@@ -4,17 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 import java.lang.*;
 public class Main {
-
-
-//
-//    static int number = 0;
-//    static int j = -1,k=-1,l=-1,m=0;
-//    static int[] constants= new int[20];
-//    static char[][] variables = new char[20][20];
-//    static int[] pr = new int[10];
-
-
-    //for digit conditions
+        //for digit conditions
     static int[] constants = new int[20];
     static int tnum = 0;
     static int l =-1;
@@ -40,8 +30,6 @@ public class Main {
         add("lt");
     }};
 
-
-
     public static void main(String[] args) {
 
 
@@ -58,11 +46,8 @@ public class Main {
     //System.out.println(input);
 
         lexer(input);
-
-    }
+ }
      static void lexer(String source){
-
-
 
         String expr[] = source.split("");
         print("<< Tokens :"+Arrays.toString(expr));
@@ -116,14 +101,11 @@ public class Main {
                o_i++;
                operators[o_i]=expr[k].charAt(0);
             }
-
-
         }
 
-        //converting 2d array to 1-D for identifiers;
-
+        /////converting 2d array to 1-D for identifiers;
          int lp = 0;
-        n = lastpos.length;
+         n = lastpos.length;
         ArrayList<String> identifiers = new ArrayList<>();
          StringBuffer t_id = new StringBuffer();
 
@@ -162,14 +144,12 @@ public class Main {
 
 
 
-
-
-
-
+        System.out.println("Added this today");
     }
 
     static void print(String inp){
         System.out.println(inp);
-    }
 
+    }
+    
 }
