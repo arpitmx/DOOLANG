@@ -5,10 +5,17 @@ import java.util.Scanner;
 import java.lang.*;
 
 
-//Edit Nov 12 , 2020;
-// Testing for git push...
-//FInal Testing 1
 
+/*
+>>>DOOLANG : 
+
+Started on 10th November, 2020.
+A logo type compiler , made in java.
+Author - Arpit Maurya
+How to push : Save>Commit>Push
+  
+*/
+ 
 public class Main {
         //for digit conditions
     static int[] constants = new int[20];
@@ -145,8 +152,6 @@ public class Main {
 
         System.out.println("<< Keywords :" + keywords);
 
-
-        System.out.println("Added this today");
     }
 
     static void print(String inp){
