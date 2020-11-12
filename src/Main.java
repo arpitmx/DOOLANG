@@ -3,6 +3,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 import java.lang.*;
+
+
+//Edit Nov 12 , 2020;
+
+
 public class Main {
         //for digit conditions
     static int[] constants = new int[20];
@@ -106,7 +111,7 @@ public class Main {
         /////converting 2d array to 1-D for identifiers;
          int lp = 0;
          n = lastpos.length;
-        ArrayList<String> identifiers = new ArrayList<>();
+         ArrayList<String> identifiers = new ArrayList<>();
          StringBuffer t_id = new StringBuffer();
 
         for (int i = 0; i <20 ; ++i){
@@ -131,8 +136,6 @@ public class Main {
 
         }
 
-
-
         System.out.println("<< Constants :"+Arrays.toString(constants));
 
         System.out.println("<< Operators :"+Arrays.toString(operators));
@@ -140,8 +143,6 @@ public class Main {
         System.out.println("<< Identifiers :"+identifiers);
 
         System.out.println("<< Keywords :" + keywords);
-
-
 
 
         System.out.println("Added this today");

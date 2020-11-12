@@ -3,6 +3,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
+//Edit Nov 12
+
 public class Token {
     int n_elements = 2;
 
@@ -17,7 +19,6 @@ public class Token {
 
             this.direction = Dir;
             this.magnitude = Mag;
-
         }
 
     }
