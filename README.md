@@ -12,6 +12,7 @@
 # Things to add next:
 
  1.Work on error preprocessing , and pre syntax error correctio into the lexer;
- 2.Start the work on Doo's V1.0 Parser;
+ 
+ 2.Start the work on Doo's v1.0 Parser;
 
  
