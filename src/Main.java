@@ -41,6 +41,8 @@ public class Main {
         add("bkd");
         add("rt");
         add("lt");
+        add("doo");
+        
     }};
 
     public static void main(String[] args) {
