@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ErrorSuggest",
+            "request": "launch",
+            "mainClass": "ErrorSuggest",
+            "projectName": "DOOLANG_f66cd764"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
             "mainClass": "Main",
