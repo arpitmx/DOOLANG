@@ -13,11 +13,12 @@ public class ErrorSuggest {
     */
    static ArrayList<String> preserved_keywords = new ArrayList<>() {
         {
-            add("legit");
-            add("arpit");
+            add("frd");
+            add("elegance");
             add("hello");
             add("temper");
             add("enter");
+            add("elephant");
 
         }
     };
@@ -27,6 +28,7 @@ public class ErrorSuggest {
        // System.out.println(Arrays.toString(tokens));
         int ninp = tokens.length;
         int source_length = source.length();
+        System.out.println("<< Syntax error : "+source);
         for (int i = 0 ; i < preserved_keywords.size() ; ++i){
             int match_count = 0;
             int not_matched = 0;
@@ -59,7 +61,7 @@ public class ErrorSuggest {
            // System.out.println(curr_keyword+" : Matched >"+match_count+" Not Matched :"+not_matched);
            
            if (match_count>not_matched){
-                System.out.println("<< Syntax error : "+source+" \n>> Do you meant : "+curr_keyword+"?");
+                System.out.println(">> Do you meant : "+curr_keyword+"?");
                 
            }
 
@@ -79,7 +81,7 @@ public class ErrorSuggest {
 
 
     public static void main(String[] args) {
-        suggest("tempre");
+        suggest("e");
     }
 
     
