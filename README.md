@@ -22,12 +22,14 @@
 
 ## Current Version
   <b>Version code - v0.0.1<b>
+  Work under progress
 
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
   * [Built With](#built-with)
   * [Updates](#Updates)
+  * [Sample DOO Source code:](#Sample-Doo-Source-code:)
 
 
 ### Updates
