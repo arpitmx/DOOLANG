@@ -11,14 +11,11 @@
   rt:90;   //turn right, making 90 degree agle wrt y-axis , rt:-90; or rt:270 == lt:90;<br>
   frd:50;<br>
   lt:50;   //turn left , making 50 degree agle wrt  y-axis<br>
-  frd:20;<br>
+
 
 
   Output: Taking 1 '|' = 1 UNIT AND '--' = 1 UNIT<br>
                
-              ^<br />   
-              |<br />
-              |<br />
    |>-----------^<br>
    |<br>
    |<br>
