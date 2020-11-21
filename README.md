@@ -15,9 +15,10 @@
 
 
   Output: Taking 1 '|' = 1 UNIT AND '--' = 1 UNIT<br>
-
-                |<br />
-                |<br />
+               
+              ^<br />   
+              |<br />
+              |<br />
    |>-----------^<br>
    |<br>
    |<br>
