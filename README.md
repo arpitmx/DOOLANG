@@ -16,8 +16,8 @@
 
   Output: Taking 1 '|' = 1 UNIT AND '--' = 1 UNIT<br>
 
-   |(X)         |<br>
-   |(X)         |<br>   
+                |<br />
+                |<br />
    |>-----------^<br>
    |<br>
    |<br>
@@ -35,4 +35,4 @@
  
  2.Start the work on Doo's v1.0 Parser;
 
- 
+
