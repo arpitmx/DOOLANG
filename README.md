@@ -14,19 +14,16 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">YOUR_TITLE</h3>
+  <h3 align="center"><em><b>DOOLANG</b></em></h3>
 
   <p align="center">
     LOGO like interpreter , build on top of java.
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/ArpitMaurya01/DOOLANG"><strong>Explore the repo »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    .
+    <a href="https://github.com/ArpitMaurya01/DOOLANG/issues">Report Bug</a>
   </p>
 </p>
 
@@ -34,21 +31,16 @@
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
-
-* [About the Project](#about-the-project)
   * [Built With](#built-with)
-* [Getting Started](#getting-started)
-  * [Prerequisites](#prerequisites)
-  * [Installation](#installation)
-* [Usage](#usage)
-* [Roadmap](#roadmap)
-* [Contributing](#contributing)
-* [License](#license)
-* [Contact](#contact)
-* [Acknowledgements](#acknowledgements)
+  * [Updates](#Updates)
 
 
 
+
+### Updates
+
+  Latest Log 20 nov, 2020;
+  
 
 
 ### Built With
