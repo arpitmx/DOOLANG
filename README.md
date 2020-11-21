@@ -30,18 +30,20 @@
 
 
 ### Updates
-
+  Started on 8th Nov,2020.
+  
   Latest Log 20 nov, 2020;
   
-  Things to add : 
+ # Things to add : 
+  
   1. Mini error suggestor
   2. Work on parser
                                       
   
   
-  Things added :
+ # Things added :
   
-  1.Simple doo lexer , for tokenizing source code.
+  1.Simple doo lexer ,for tokenizing source code.
                  
   
 
