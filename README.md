@@ -20,13 +20,14 @@
 </p>
 
 
+## Current Version
+  <b>0.0.1<b>
+
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
   * [Built With](#built-with)
   * [Updates](#Updates)
-
-
 
 
 ### Updates
@@ -45,7 +46,9 @@
   
   1.Simple doo lexer ,for tokenizing source code.
                  
-  
+ 
+### Sample Doo Source code:
+
 
 
 ### Built With
