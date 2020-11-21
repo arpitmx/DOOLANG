@@ -1,21 +1,15 @@
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
-
-
-
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="https://github.com/ArpitMaurya01/DOOLANG/blob/main/images/doologo.jpg" alt="Logo" width="100" height="100">
+    <img src="https://github.com/ArpitMaurya01/DOOLANG/blob/main/images/doologo.jpg" alt="Logo" width="150" height="150">
   </a>
 
   <h3 align="center"><em><b>DOOLANG</b></em></h3>
 
   <p align="center">
-    LOGO like interpreter , build on top of java.
+    <b>LOGO like interpreter , build on top of java.<b>
     <br />
     <a href="https://github.com/ArpitMaurya01/DOOLANG"><strong>Explore the repo »</strong></a>
     <br />
@@ -38,6 +32,17 @@
 ### Updates
 
   Latest Log 20 nov, 2020;
+  
+  Things to add : 
+  1. Mini error suggestor
+  2. Work on parser
+                                      
+  
+  
+  Things added :
+  
+  1.Simple doo lexer , for tokenizing source code.
+                 
   
 
 
