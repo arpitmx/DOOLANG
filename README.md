@@ -11,10 +11,10 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.looper.com%2F140499%2Fthings-you-only-notice-in-scooby-doo-as-an-adult%2F&psig=AOvVaw1D_ytm6Lr2EyN2VbTHj0Ko&ust=1606032190438000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLCi5rGWk-0CFQAAAAAdAAAAABAEg" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center"><em><b>DOOLANG</b></em></h3>
+  <h3 align="center"><em><b>>DOOLANG</b></em></h3>
 
   <p align="center">
     LOGO like interpreter , build on top of java.
@@ -54,16 +54,5 @@
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=flat-square
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=flat-square
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=flat-square
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=flat-square
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=flat-square
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
-[product-screenshot]: images/screenshot.png
+
  
