@@ -14,15 +14,18 @@ lt:50;   //turn left , making 50 degree agle wrt  y-axis
 frd:20;
 
 Output: Taking 1 '|' = 1 UNIT AND '--' = 1 UNIT
-
-|(X)         |
-|(X)         |   
-|>-----------^
-|
-|
-|
-|
- 
+(y-axis)
+ ^
+ |
+ |
+ 7  |(X)         |
+ 6  |(X)         |   
+ 5  |>-----------^
+ 4  |
+ 3  |
+ 2  |
+ 1  |
+ 0  0  1  2  3 4 5 ------> (x-axis)
  
 # Things Done:
  1. Added a simple lexer for tokenizing source code.
