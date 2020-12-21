@@ -9,7 +9,7 @@
   <h3 align="center"><em><b>DOOLANG v0.0.1</b></em></h3>
 
   <p align="center">
-    <b>LOGO like interpreter , build on top of java.<b>
+    <b>LOGO like interpreter , built on top of java.<b>
     <br />
     <a href="https://github.com/ArpitMaurya01/DOOLANG"><strong>Explore the repo »</strong></a>
     <br />
