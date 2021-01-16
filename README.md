@@ -55,10 +55,10 @@
   bkd:20;  //Move backwards, towards -y axis ,0 degree with Y axis<br>
   rt:90;   //turn right, making 90 degree agle wrt y-axis , rt:-90; or rt:270 == lt:90;<br>
   frd:50;<br>
-  lt:50;   //turn left , making 50 degree agle wrt  y-axis<br>
+  lt;   //turn left , making  90 degree agle wrt  x-axis(default angle values resp. to direction)<br>
   
 
-  Output: Taking 1 '|' = 1 UNIT AND '--' = 1 UNIT<br>
+  Output: Taking 1 '|' = 10 UNIT AND '--' = 10 UNIT<br>
 
  
    |>-----------^<br>
