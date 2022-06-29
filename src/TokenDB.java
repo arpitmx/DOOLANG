@@ -7,8 +7,8 @@ public class TokenDB {
 
   // PRESEVED KEYS
     // static String[] keywords = {"frd","bkd","rt","lt"};
-    static ArrayList<String> keywords = new ArrayList<>();
-    static List<String> KEYWORDS = new ArrayList<>() {
+    static ArrayList<String> keywords = new ArrayList<String>();
+    static List<String> KEYWORDS = new ArrayList<String>() {
         {
             add("frd");
             add("bkd");
@@ -19,7 +19,7 @@ public class TokenDB {
         }
     };
 
-    static List<Character> OPERATORS = new ArrayList<>() {
+    static List<Character> OPERATORS = new ArrayList<Character>() {
         {
             add('+');
             add('-');

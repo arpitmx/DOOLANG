@@ -11,7 +11,7 @@ public class ErrorSuggest {
                   Do you mean : "frd" ?
         
     */
-   static ArrayList<String> preserved_keywords = new ArrayList<>() {
+   static ArrayList<String> preserved_keywords = new ArrayList() {
         {
             add("frd");
             add("elegance");

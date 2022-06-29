@@ -11,58 +11,55 @@ import java.util.List;
 
 
 public class DooLexer {
-    
-
-   ////////////////////  GLOBAL VARIABLES AND CONFIGS.  //////////////////////////
 
 
-    static int[] constants = new int[20];
+    ////////////////////  GLOBAL VARIABLES AND CONFIGS.  //////////////////////////
+
+
+    static ArrayList<String> Constant = new ArrayList<>();
     static int tnum = 0;
     static int l =-1;
 
-    static ArrayList<String> identifiers = new ArrayList<>();
+    static ArrayList<String> Identifiers = new ArrayList<>();
 
     // for alpha conditions
     static int row = 0;
     static int column = -1;
     static char[][] variables = new char[20][20];
+    static ArrayList<Integer> Numbers;
     static int[] lastpos = new int[10];
     static int lp_n = 0; // holds last pos of column number in isAlpha condition
 
     // for oprator ,seperator , puntuators conditions ;
-    static char[] operators = new char[20];
+    static ArrayList<Character> Operator;
     static int o_i = -1; // operator count
 
-    static char[] seperator = new char[20];
+    static ArrayList<Character> Seperator;
     static int s_i = -1; // seperator count
 
-    static char[] punctuators = new char[20];
+    static ArrayList<Character> Punctuator;
     static int p_i = -1; // punctuators count
 
     //////////////////// GLOBAL VARIABLES AND CONFIGS.///////////////////////
 
     // PRESEVED KEYS
     // static String[] keywords = {"frd","bkd","rt","lt"};
-    static ArrayList<String> keywords = new ArrayList<>();
-    static List<String> preserved_keywords = new ArrayList<>() {
+    static ArrayList<String> Keywords = new ArrayList<>();
+
+    static ArrayList preserved_keywords = new ArrayList() {
         {
-            add("frd");
+            add("print");
             add("bkd");
             add("rt");
             add("lt");
-            add("doo");
+            add("frd");
 
         }
     };
 
-    static List<Character> OPERATORS = new ArrayList<>() {
+    static List<Character> OPERATORS = new ArrayList() {
         {
-            add('+');
-            add('-');
-            add('/');
-            add('=');
-            add('*');
-
+            add(':');
         }
     };
 
@@ -81,7 +78,7 @@ public class DooLexer {
 
     static List<Character> PUNCTUATORS = new ArrayList<Character>() {
         {
-            add(':');
+            add(',');
             add(';');
             add('.');
         }
@@ -89,7 +86,12 @@ public class DooLexer {
 
     DooLexer() {
         // Empty construtor;
+        Numbers = new ArrayList<>();
+        Seperator = new ArrayList<>();
+        Operator = new ArrayList<>();
+        Punctuator = new ArrayList<>();
     }
+
 
     /////////////////////////////////////// Lexer ///////////////////
 
@@ -115,14 +117,15 @@ public class DooLexer {
             // char curr_char = (expr[k]).charAt(0);
             // System.out.println(k);
 
-            if (Character.isDigit(expr[k].charAt(0))) {
+            if (Character.isDigit(expr[k].charAt(0)) ) {
                 // print(expr[i]+" is a digit");
-                while (Character.isDigit(expr[k].charAt(0))) {
+                while ( Character.isDigit(expr[k].charAt(0))) {
                     tnum = 10 * tnum + ascii.get(k) - '0';
                     k++;
                 }
                 l++;
-                constants[l] = tnum;
+//                constants[l] = tnum;
+                Numbers.add(tnum);
                 tnum = 0;
             }
 
@@ -132,8 +135,8 @@ public class DooLexer {
 
             if (SEPERATORS.contains(expr[k].charAt(0))) {
                 s_i++;
-                seperator[s_i] = expr[k].charAt(0);
-
+                Seperator.add(s_i,expr[k].charAt(0));
+             //   seperator[s_i] = expr[k].charAt(0);
             }
 
             /////////// Checking if ascii is SEPERATOR //////////////////////////////
@@ -142,7 +145,7 @@ public class DooLexer {
 
             if (PUNCTUATORS.contains(expr[k].charAt(0))) {
                 p_i++;
-                punctuators[p_i] = expr[k].charAt(0);
+                Punctuator.add(p_i,expr[k].charAt(0));
 
             }
 
@@ -169,7 +172,7 @@ public class DooLexer {
             /////////// Checking if ascii is Operator //////////////////////////////
             if (OPERATORS.contains(expr[k].charAt(0))) {
                 o_i++;
-                operators[o_i] = expr[k].charAt(0);
+                Operator.add(o_i,expr[k].charAt(0));
             }
         }
         /////////// Checking if ascii is Operator //////////////////////////////
@@ -180,7 +183,7 @@ public class DooLexer {
         int lp = 0;
         n = lastpos.length;
 
-        StringBuffer t_id = new StringBuffer();
+        StringBuilder t_id = new StringBuilder();
 
         for (int i = 0; i < 20; ++i) {
 
@@ -192,24 +195,24 @@ public class DooLexer {
                 }
                 lp++;
                 if (!preserved_keywords.contains(String.valueOf(t_id))) {
-                    identifiers.add(String.valueOf(t_id));
+                    Identifiers.add(String.valueOf(t_id));
                     t_id.delete(0, t_id.length());
                 }else{
-                    keywords.add(String.valueOf(t_id));
+                    Keywords.add(String.valueOf(t_id));
                     t_id.delete(0, t_id.length());
-                    }
-
                 }
+
+            }
 
         }
 
 
 
-     /////////////////////////////////////////converting 2d array to 1-D for identifiers
+        /////////////////////////////////////////converting 2d array to 1-D for identifiers
 
 
 
-      
+
     }
 
 
@@ -217,23 +220,23 @@ public class DooLexer {
 
 
 
-        void _printTokens(){
+    void _printTokens(){
 
-        System.out.println("<< Classification :\n\n");        
-        System.out.println("<< Constants :"+Arrays.toString(constants));
+        System.out.println("<< Classification :\n\n");
+        System.out.println("<< Constants :"+Constant);
 
-        System.out.println("<< Operators :"+Arrays.toString(operators));
+        System.out.println("<< Operators :"+Operator);
 
-        System.out.println("<< Seperator :"+Arrays.toString(seperator));
+        System.out.println("<< Seperator :"+Seperator);
 
-        System.out.println("<< Punctuators :"+Arrays.toString(punctuators));
+        System.out.println("<< Punctuators :"+Punctuator);
 
-        System.out.println("<< Identifiers :"+identifiers);
+        System.out.println("<< Identifiers :"+ Identifiers);
+        System.out.println("<< Keywords :" + Keywords);
+        System.out.println("<< Numbers :" + Numbers);
 
-        System.out.println("<< Keywords :" + keywords);
 
-       
-    
+
     }
 
 

@@ -29,8 +29,11 @@ public class Main {
     System.out.println(">>>DooLang");
     System.out.print("<<");
 
-    String input = "frd a : 60;";
-
+    String input = "frd: 120" +
+            "rt:90, ;"  +
+            "lt:120" +
+            "bkd:20";
+    input += " ";
     System.out.println(" Input : "+input);
   
    dooLexer.init_lexer(input);
